@@ -28,20 +28,7 @@ Shared scripts live in `/tools`, shared facts in `/knowledge`, per-project notes
 
 ## Template
 
-```markdown
----
-name: <use-case>
-description: <one line: when to use it>
-status: draft
-last_run: YYYY-MM-DD (<project>)
----
-
-# <Title>
-
-## Inputs          what the user provides
-## Steps           numbered; each says who: Claude alone / Claude + user check / user
-## Checkpoints     where to stop for human review
-## Defaults        numbers and settings
-## Known issues    and workarounds
-## Open questions
-```
+Copy [`TEMPLATE/PLAYBOOK.md`](TEMPLATE/PLAYBOOK.md) to `playbooks/<use-case>/PLAYBOOK.md`
+and fill it in — it has inline notes on what belongs in each section. Contributing
+a playbook back to this repo? Read [`CONTRIBUTING.md`](../CONTRIBUTING.md) first
+for the bar a submission needs to clear.

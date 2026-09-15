@@ -4,7 +4,7 @@ Home base for editing with Claude driving DaVinci Resolve through a Resolve MCP
 connector. There's no app code here: this is the operating manual (playbooks +
 knowledge) for recurring editing work, plus notes on individual projects.
 
-New here? Read `START_HERE.md` first.
+New here? Read `README.md` first.
 
 ## Map
 
@@ -45,3 +45,27 @@ Write down what you learn in the same session, dated (YYYY-MM-DD), marking anyth
 - A preference or workflow change → the playbook, and a `knowledge/conventions.md` if you start one
 - Project-specific results and status → `projects/<project>.md`
 - A new recurring task → new `playbooks/<use-case>/PLAYBOOK.md` from the template in `playbooks/README.md`
+
+## If you're an agent working toward a contribution
+
+Someone opened Claude Code in this repo because they want to add a playbook.
+Here's the order that actually produces something worth merging:
+
+1. **Do the task first, don't write the playbook first.** Help with the real,
+   repeated task on real material, the way any session in this repo would.
+   Draft the procedure as you go, but treat it as scratch notes, not a
+   deliverable yet.
+2. **Run it more than once.** A procedure that worked once is an anecdote. It
+   needs to survive a second project with different material before its
+   "defaults" and "known issues" sections mean anything — see the
+   `draft → stable` distinction in `playbooks/README.md`.
+3. **Only then** copy `playbooks/TEMPLATE/PLAYBOOK.md`, fill it in from what
+   actually happened, and check it against `CONTRIBUTING.md`'s checklist
+   before opening a PR.
+4. Strip anything specific to the person or project you were helping — names,
+   paths, client identifiers — the way `example-single-take-video-edit` was
+   genericized from a real one. If unsure whether something is too specific,
+   leave it out and generalize the number or example instead.
+5. Tell the user plainly what you're about to make public before opening a
+   PR. This repo is reviewed by one maintainer; a low-effort or never-run
+   submission just costs them time to reject.
